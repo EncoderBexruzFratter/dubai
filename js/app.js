@@ -87,15 +87,14 @@ gsap.to(".payment__bottom", {
     start: "top bottom",
     end: "bottom",
     scrub: true,
-    markers:true
   }
 });
 
 gsap.to(".hg", {
-  // maxWidth: 1440,
-  // x:-100,
-  // y:-240,
-  // height:900,
+  maxWidth: 1440,
+  x:-100,
+  y:-240,
+  height:900,
   scale:1.85,
   duration:1,
   scrollTrigger: {
@@ -103,6 +102,5 @@ gsap.to(".hg", {
     start: "bottom -100px",
     end: "bottom -bottom",
     scrub: true,
-    markers:true
   }
 });
