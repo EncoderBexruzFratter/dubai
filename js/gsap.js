@@ -85,22 +85,91 @@ gsap.to(".payment__bottom", {
   scrollTrigger: {
     trigger: ".payment__bottom",
     start: "top bottom",
-    end: "bottom",
+    end: "top 200px",
     scrub: true,
   }
 });
 
 gsap.to(".hg", {
-  maxWidth: 1440,
-  x:-100,
-  y:-240,
-  height:900,
+  // maxWidth: 1440,
+  // x:-100,
+  // y:-240,
+  // height:900,
   scale:1.85,
   duration:1,
   scrollTrigger: {
-    trigger: ".payment__bottom",
-    start: "bottom -100px",
-    end: "bottom -bottom",
+    trigger: ".hg",
+    start: "bottom 200px",
+    end: "bottom 100",
     scrub: true,
+    // markers:true,
   }
 });
+gsap.to(".payment__bg", {
+  // maxWidth: 1440,
+  // x:-100,
+  // y:-240,
+  // height:900,
+  backgroundColor: "#232323",
+  duration:3,
+  scrollTrigger: {
+    trigger: ".payment__bottom",
+    start: "bottom 500px",
+    end: "bottom 500",
+    scrub: true,
+    // markers:true,
+  }
+});
+gsap.to(".portfolio__title", {
+  y:-60,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".portfolio__title",
+    start: "top 300",
+    end: "bottom 300",
+    // markers:true
+  }
+})
+gsap.to(".portfolio__btn__box", {
+  x:-330,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".portfolio__title",
+    start: "top 300",
+    end: "bottom 300",
+    // markers:true
+  }
+})
+gsap.to(".portfolio__card__top", {
+  scale:1,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".portfolio__title",
+    start: "top 300",
+    end: "bottom 300",
+    // markers:true
+  }
+})
+gsap.to(".portfolio__card__center", {
+  scale:1,
+  duration:3,
+  scrollTrigger: {
+    trigger: ".portfolio__card__center",
+    start: "top center",
+    end: "bottom center",
+    // markers:true
+  }
+})
+gsap.to(".portfolio__card__bottom", {
+  scale:1,
+  duration:3,
+  scrollTrigger: {
+    trigger: ".portfolio__card__bottom",
+    start: "top center",
+    end: "bottom center",
+    // markers:true
+  }
+})
+
+
+
