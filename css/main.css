@@ -474,7 +474,6 @@ button {
     height: 900px;
     max-height: 900px;
     position: relative;
-    border: 1px solid red;
     overflow: hidden;
     border-radius: 30px;
 }
