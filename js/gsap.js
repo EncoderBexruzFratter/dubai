@@ -145,7 +145,7 @@ gsap.to(".payment__container", {
     trigger: ".payment__container",
     start: "600 400",
     end: "1000 400",
-    markers: true,
+    // markers: true,
     scrub: 2,
   },
 });
@@ -171,4 +171,3 @@ gsap.to(".portfolio__btn__box", {
     scrub: 4,
   },
 });
-
