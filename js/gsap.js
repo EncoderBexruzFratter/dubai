@@ -160,6 +160,17 @@ gsap.to(".payment", {
     scrub: true,
   },
 });
+gsap.to("#payment__scroll__box", {
+  backgroundColor:"#232323",
+  duration: 1,
+  scrollTrigger: {
+    trigger: "#payment__scroll__box",
+    start: "600 400",
+    end: "1000 400",
+    // markers: true,
+    scrub: true,
+  },
+});
 gsap.to(".portfolio__btn__box", {
   x: -330,
   // duration: 1,

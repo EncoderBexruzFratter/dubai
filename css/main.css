@@ -479,10 +479,42 @@ button {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
     position: relative;
     border-radius: 30px;
-    overflow: hidden;
+    height: 100%;
+}
+.payment__btn__box {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+}
+
+.payment__btn__box__parent_2 {
+    position: relative;
+    max-width: 104px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.payment__btn {}
+
+.paymet__text__box {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.payment__text {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    color: white;
 }
 
 .payment__scroll__box {
@@ -495,6 +527,7 @@ button {
     background-color: #f8f5f2;
     /* background-color: red; */
     border-radius: 30px;
+    /* z-index: 1; */
 }
 
 .payment__video__parent {
@@ -509,7 +542,16 @@ button {
     width: 100%;
     height: 100%;
 }
-
+@media(max-width:768px){
+    .payment{
+        max-height: 852px;
+        height: 100%;
+    }
+    .payment__container{
+        max-height: 852px;
+        height: 100%;
+    }
+}
 .portfolio {
     background-color: #232323;
     padding-top: 100px;
@@ -1033,6 +1075,7 @@ button {
     line-height: 21.6px;
     color: #232323;
 }
+
 /* .report__title_1{
     background-color: red;
 } */
