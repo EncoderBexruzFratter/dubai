@@ -40,6 +40,7 @@ gsap.to(".gsap__scr", {
 });
 
 // countplus function definition
+
 function countplus() {
   const reportTitle = document.querySelector(".report__title_1");
   if (!reportTitle) return;
