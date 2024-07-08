@@ -139,43 +139,89 @@ gsap.to(".payment__scroll__box", {
     trigger: ".payment__scroll__box",
     start: "-1000 -500",
     end: "bottom bottom",
-    // markers: true,
     scrub: 2,
   },
 });
-gsap.to(".payment__container", {
-  maxWidth:1360,
-  duration: 5,
-  scrollTrigger: {
-    trigger: ".payment__container",
-    start: "500 400",
-    end: "1000 400",
-    // markers: true,
-    scrub: 2,
-  },
-});
+
 gsap.to(".payment", {
   backgroundColor:"#232323",
   scrollTrigger: {
     trigger: ".payment",
     start: "400 400",
     end: "1000 400",
-    // markers: true,
     scrub: true,
     // pin:true
 
   },
 });
-gsap.to("#payment__scroll__box", {
-  backgroundColor:"#232323",
-  scrollTrigger: {
-    trigger: "#payment__scroll__box",
-    start: "600 400",
-    end: "1000 400",
-    // markers: true,
-    scrub: true,
-  },
-});
+
+function payment() {
+  if (window.innerWidth < 768) {
+    // Kichik ekranlar uchun animatsiya
+    gsap.to("#payment__scroll__box", {
+      backgroundColor:"#232323",
+      scrollTrigger: {
+        trigger: "#payment__scroll__box",
+        start: "top top",
+        end: "bottom top",
+        // markers:true,
+        scrub: true,
+      },
+    });
+    gsap.to("#payment__scroll__box", {
+      backgroundColor:"#232323",
+      scrollTrigger: {
+        trigger: "#payment__scroll__box",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+    gsap.to(".payment__container", {
+      maxWidth:340,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".payment__container",
+        start: "800 200",
+        end: "800 200",
+        scrub: 2,
+        // markers:true,
+      },
+    });
+  } else {
+    // Katta ekranlar uchun animatsiya
+    gsap.to("#payment__scroll__box", {
+      backgroundColor:"#232323",
+      scrollTrigger: {
+        trigger: "#payment__scroll__box",
+        start: "600 400",
+        end: "1000 400",
+        scrub: true,
+        // markers:true,
+      },
+    });
+    gsap.to("#payment__scroll__box", {
+      backgroundColor:"#232323",
+      scrollTrigger: {
+        trigger: "#payment__scroll__box",
+        start: "600 400",
+        end: "1000 400",
+        scrub: true,
+      },
+    });
+    gsap.to(".payment__container", {
+      maxWidth:1360,
+      duration: 5,
+      scrollTrigger: {
+        trigger: ".payment__container",
+        start: "500 400",
+        end: "1000 400",
+        scrub: 2,
+      },
+    });
+  }
+}
+payment()
 gsap.to(".portfolio__btn__box", {
   x: -330,
   // duration: 1,
@@ -295,8 +341,8 @@ function solution() {
       y:-67,
       duration:1,
       scrollTrigger:{
-        trigger:".solution__anime_1",
-        start:"-440 100",
+        trigger:".solutions__title_top",
+        start:"-240 100",
         end:"-440 100",
         scrub:2,
         // markers:true,
@@ -306,8 +352,8 @@ function solution() {
       y:-67,
       duration:1,
       scrollTrigger:{
-        trigger:".solution__anime_1",
-        start:"-440 100",
+        trigger:".solutions__title_top",
+        start:"-240 100",
         end:"-440 100",
         scrub:2,
         // markers:true,
@@ -317,8 +363,8 @@ function solution() {
       y:-67,
       duration:1,
       scrollTrigger:{
-        trigger:".solution__anime_1",
-        start:"-440 100",
+        trigger:".solutions__title_top",
+        start:"-240 100",
         end:"-440 100",
         scrub:2,
         // markers:true,
@@ -329,8 +375,8 @@ function solution() {
       duration:1,
       opacity:1,
       scrollTrigger:{
-        trigger:".solution__anime_1",
-        start:"-420 100",
+        trigger:".solutions__title_top",
+        start:"-220 100",
         end:"-420 100",
         scrub:2,
         // markers:true,
@@ -665,6 +711,243 @@ function responsiveAnimation() {
   }
 }
 responsiveAnimation()
+
+gsap.to(".unrivalled", {
+  opacity:1,
+  duration:3,
+  scrollTrigger: {
+    trigger: ".unrivalled",
+    start: "top 400",
+    end: "top 400",
+  },
+});
+// gsap.to(".discocer" , {
+//   y:-200,
+//   duration:2,
+//   scrollTrigger: {
+//     trigger: ".discocer",
+//     start: "top 400",
+//     end: "top 400",
+//     markers:true,
+//     toggleActions:"restart none none none "
+//   }
+// })
+// gsap.to(".main__animation" , {
+//   y:-550,
+//   duration:2,
+//   scrollTrigger: {
+//     trigger: ".main__animation",
+//     start: "-850 400",
+//     end: "-850 400",
+//     markers:true,
+//     toggleActions:"restart none none none "
+//   }
+// })
+
+// gsap.to(".discover_left__right__animation" , {
+//   y:-1000,
+//   duration:2,
+//   scrollTrigger: {
+//     trigger: ".discover_left__right__animation",
+//     start: "-1400 200",
+//     end: "-1400 200",
+//     markers:true,
+//   }
+// })
+
+// gsap.to(".discover__left-2__right-2__aniamtion" , {
+//   y:-1210,
+//   duration:2,
+//   delay:2,
+//   scrollTrigger: {
+//     trigger: ".discover_left__right__animation",
+//     start: "-1400 200",
+//     end: "-1400 200",
+//     markers:true,
+//   }
+// })
+// gsap.to(".discover_center__animation" , {
+//   y:-1160,
+//   duration:2,
+//   delay:4,
+//   scrollTrigger: {
+//     trigger: ".discover_left__right__animation",
+//     start: "-1400 200",
+//     end: "-1400 200",
+//     markers:true,
+//   }
+// })
+
+
+
+
+function discover__card__fun() {
+  if (window.innerWidth < 1285) {
+    // Kichik ekranlar uchun animatsiya
+    gsap.to(".discover__card__top" , {
+      y:-1000,
+      duration:1,
+      scrollTrigger: {
+        trigger: ".discover__card__top",
+        start: "-1300 200",
+        end: "-1300 200",
+        // markers:true,
+        toggleActions:"restart none  reverse none "
+      }
+    })
+    gsap.to(".discover__card__center" , {
+      y:-1000,
+      duration:1,
+      scrollTrigger: {
+        trigger: ".discover__card__center",
+        start: "-1300 200",
+        end: "-1300 200",
+        // markers:true,
+        toggleActions:"restart none  reverse none "
+      }
+    })
+    gsap.to(".discover__card__bottom" , {
+      y:-1000,
+      duration:1,
+      scrollTrigger: {
+        trigger: ".discover__card__bottom",
+        start: "-1300 200",
+        end: "-1300 200",
+        // markers:true,
+        toggleActions:"restart none  reverse none "
+      }
+    })
+  } else {
+    // Katta ekranlar uchun animatsiya
+    gsap.to(".discover__card__top" , {
+      y:-1000,
+      duration:1,
+      scrollTrigger: {
+        trigger: ".discover__card__top",
+        start: "-1400 200",
+        end: "-1400 200",
+        // markers:true,
+        toggleActions:"restart none  reverse none "
+      }
+    })
+    gsap.to(".discover__card__center" , {
+      y:-1000,
+      duration:1,
+      scrollTrigger: {
+        trigger: ".discover__card__center",
+        start: "-1400 200",
+        end: "-1400 200",
+        // markers:true,
+        toggleActions:"restart none  reverse none "
+      }
+    })
+    gsap.to(".discover__card__bottom" , {
+      y:-1000,
+      duration:1,
+      scrollTrigger: {
+        trigger: ".discover__card__bottom",
+        start: "-1400 200",
+        end: "-1400 200",
+        // markers:true,
+        toggleActions:"restart none  reverse none "
+      }
+    })
+  }
+}
+
+discover__card__fun()
+
+
+
+gsap.to(".partner__asked__animation" , {
+  y:-430,
+  // duration:5,
+  scrollTrigger: {
+    trigger: ".partner__asked__animation",
+    start: "-500 200",
+    end: "-130 200",
+    scrub:1,
+    // markers:true,  
+  }
+})
+
+
+gsap.to(".future__container" , {
+  scale:1,
+  duration:5,
+  scrollTrigger: {
+    trigger: ".future__container",
+    start: "-330 200",
+    end: "-155 200",
+    scrub:1,
+    // markers:true,
+  }
+})
+
+let tl7 = gsap.timeline({
+  scrollTrigger:{
+    trigger:".future__container",
+    start:"-250 250",
+    end:"-250 250",
+    // markers:true,
+    // scrub:2,
+    toggleActions:"restart none  reverse none "
+  }
+})
+tl7.to(".future__title", {
+  y:-150,
+  duration:1
+})
+tl7.to(".future__btn" , {
+  y:-40,
+  duration:1
+})
+
+gsap.to(".future__container__width__animation" , {
+  maxWidth:1360,
+  duration:1,
+  scrollTrigger:{
+    trigger:".future__container",
+    start:"center 250",
+    end:"bottom 250",
+    // markers:true,
+    // scrub:2,
+    toggleActions:"restart none  reverse none "
+  }
+})
+
+
+
+gsap.to(".report__container" , {
+  maxWidth:1360,
+  // paddingLeft:0,
+  // paddingRight:0,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".report__container",
+    start: "center 200",
+    end: "bottom 200",
+    toggleActions:"restart none reverse none",
+    // markers:true,
+  }
+})
+gsap.to(".footer__conatiner" , {
+  y:-710,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".footer__conatiner",
+    start: "-760 200",
+    end: "-760 200",
+    toggleActions:"restart none reverse none",
+    // markers:true,
+  }
+})
+
+
+
+
+
+
 
 
 

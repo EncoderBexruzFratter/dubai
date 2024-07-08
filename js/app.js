@@ -126,3 +126,9 @@ function countplus2() {
 function count_3() {
   reportTitle.textContent = "0";
 }
+countplus()
+count_0()
+countplus1()
+count_1()
+countplus2()
+count_3()

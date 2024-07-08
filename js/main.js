@@ -18,5 +18,4 @@ asked__right__column.forEach(function(item , index){
         asked__right__row[index].classList.toggle("asked__right__row__active")
         asked__row__btn[index].classList.toggle("asked__row__btn__active")
     })
-    console.log([index]);
 })
