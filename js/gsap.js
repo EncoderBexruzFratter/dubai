@@ -943,6 +943,29 @@ gsap.to(".footer__conatiner" , {
   }
 })
 
+gsap.to(".discover__res__left" , {
+  y:1560,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".discover__res__left",
+    start: "1560 200",
+    end: "1560 200",
+    // markers:true,
+  }
+})
+gsap.to(".discover__res__right" , {
+  y:-1610,
+  duration:1,
+  scrollTrigger: {
+    trigger: ".discover__res__right",
+    start: "-1670 200",
+    end: "-1670 200",
+    // markers:true,
+  }
+})
+
+
+
 
 
 

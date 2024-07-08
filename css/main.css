@@ -1591,6 +1591,7 @@ button {
         max-width: 76px;
         margin-right: 20px;
         object-fit: contain;
+        margin-right: 18px;
     }
 
     .solutions__right__card__title {
@@ -1991,6 +1992,15 @@ button {
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: hidden;
+}
+.discover__res__left{
+    position: relative;
+    top: -1560px;
+}
+.discover__res__right{
+    position: relative;
+    bottom: -1610px;
 }
 
 .discover__top {
